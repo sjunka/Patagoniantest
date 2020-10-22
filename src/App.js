@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import { Container } from 'react-bootstrap';
+import { BrowserRouter, Route } from 'react-router-dom';
+
+import Navbar from './components/NavBar';
+import Footer from './components/Footer';
+import Profile from './pages/Profile';
+import Gallery from './pages/Gallery';
+import Table from './pages/Table';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <main className='py-3'>
+        <Container>
+          <Route path='/' component={Profile} exact />
+          <Route path='/gallery' component={Gallery} />
+          <Route path='/table' component={Table} />
+        </Container>
+      </main>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
