@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Jumbotron, Button, Card } from 'react-bootstrap';
+import { Row, Col, Jumbotron, Button, Card, CardDeck } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { EffectFade, EffectFlip } from 'swiper';
@@ -22,8 +22,8 @@ const Profile = () => {
       </Jumbotron>
 
       <Row>
-        <Col xs='12' md='auto'>
-          <Card style={{ width: '300px', border: 'none' }}>
+        <Col xs='12' md='6'>
+          <Card style={{ width: '300px', border: 'none', textAlign: 'center' }}>
             <Card.Img
               className='card-image'
               variant='top'
@@ -32,7 +32,7 @@ const Profile = () => {
             <Card.Body className='card-body'>
               <Card.Title>Software Developer</Card.Title>
               <Card.Text>
-                Hello, I'm a software developer, working much with JS.
+                Hello, I'm a software developer, working with JS.
               </Card.Text>
               <Button
                 variant='success'
@@ -80,6 +80,7 @@ const Profile = () => {
             </Card.Footer>
           </Card>
         </Col>
+
         <Col xs='12' md='6'>
           <Swiper
             effect='flip'
@@ -87,7 +88,43 @@ const Profile = () => {
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
           >
-            <SwiperSlide>Slide 1</SwiperSlide>
+            <SwiperSlide>
+              <CardDeck>
+                <Card>
+                  <Card.Img variant='top' src='holder.js/100px160' />
+                  <Card.Body>
+                    <Card.Title>Card title</Card.Title>
+                    <Card.Text>
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <Card>
+                  <Card.Img variant='top' src='holder.js/100px160' />
+                  <Card.Body>
+                    <Card.Title>Card title</Card.Title>
+                    <Card.Text>
+                      This card has supporting text below as a natural lead-in
+                      to additional content.{' '}
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <Card>
+                  <Card.Img variant='top' src='holder.js/100px160' />
+                  <Card.Body>
+                    <Card.Title>Card title</Card.Title>
+                    <Card.Text>
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This card has even
+                      longer content than the first to show that equal height
+                      action.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </CardDeck>
+            </SwiperSlide>
             <SwiperSlide>Slide 2</SwiperSlide>
             <SwiperSlide>Slide 3</SwiperSlide>
             <SwiperSlide>Slide 4</SwiperSlide>
