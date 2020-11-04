@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col, Jumbotron, Button, Card, CardDeck } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { EffectFade, EffectFlip } from 'swiper';
+import SwiperCore, { EffectFlip } from 'swiper';
 import 'swiper/swiper-bundle.css';
 
 SwiperCore.use([EffectFlip]);
