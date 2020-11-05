@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 import { Container } from 'react-bootstrap';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, HashRouter } from 'react-router-dom';
 
 import Navbar from './components/NavBar';
 import Footer from './components/Footer';
@@ -12,7 +12,7 @@ import Table from './pages/Table';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <main className='py-3'>
         <Container>
@@ -22,7 +22,7 @@ function App() {
         </Container>
       </main>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
