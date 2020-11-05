@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Patagoniantest/static/css/main.d7d0582e.chunk.css",
-    "main.js": "/Patagoniantest/static/js/main.a6bf5182.chunk.js",
-    "main.js.map": "/Patagoniantest/static/js/main.a6bf5182.chunk.js.map",
+    "main.js": "/Patagoniantest/static/js/main.063ff6f6.chunk.js",
+    "main.js.map": "/Patagoniantest/static/js/main.063ff6f6.chunk.js.map",
     "runtime-main.js": "/Patagoniantest/static/js/runtime-main.dc3f1bb6.js",
     "runtime-main.js.map": "/Patagoniantest/static/js/runtime-main.dc3f1bb6.js.map",
     "static/css/2.c40d1409.chunk.css": "/Patagoniantest/static/css/2.c40d1409.chunk.css",
     "static/js/2.80c5cc0b.chunk.js": "/Patagoniantest/static/js/2.80c5cc0b.chunk.js",
     "static/js/2.80c5cc0b.chunk.js.map": "/Patagoniantest/static/js/2.80c5cc0b.chunk.js.map",
     "index.html": "/Patagoniantest/index.html",
-    "precache-manifest.98fbea6953510fed95e4489740b380ed.js": "/Patagoniantest/precache-manifest.98fbea6953510fed95e4489740b380ed.js",
+    "precache-manifest.f7750f4b0bb2a0149f623c40dc5aa0e9.js": "/Patagoniantest/precache-manifest.f7750f4b0bb2a0149f623c40dc5aa0e9.js",
     "service-worker.js": "/Patagoniantest/service-worker.js",
     "static/css/2.c40d1409.chunk.css.map": "/Patagoniantest/static/css/2.c40d1409.chunk.css.map",
     "static/css/main.d7d0582e.chunk.css.map": "/Patagoniantest/static/css/main.d7d0582e.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.c40d1409.chunk.css",
     "static/js/2.80c5cc0b.chunk.js",
     "static/css/main.d7d0582e.chunk.css",
-    "static/js/main.a6bf5182.chunk.js"
+    "static/js/main.063ff6f6.chunk.js"
   ]
 }

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ac91493b3368712c2769fd7ff7932235",
+    "revision": "4c5e3e50c0d8a414824f610c2d1658ee",
     "url": "/Patagoniantest/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Patagoniantest/static/css/2.c40d1409.chunk.css"
   },
   {
-    "revision": "c40c3139679a69b8632b",
+    "revision": "8ad54b16ab46cd870545",
     "url": "/Patagoniantest/static/css/main.d7d0582e.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Patagoniantest/static/js/2.80c5cc0b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c40c3139679a69b8632b",
-    "url": "/Patagoniantest/static/js/main.a6bf5182.chunk.js"
+    "revision": "8ad54b16ab46cd870545",
+    "url": "/Patagoniantest/static/js/main.063ff6f6.chunk.js"
   },
   {
     "revision": "8fb456ab8f94f5ac7316",
