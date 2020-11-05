@@ -1,4 +1,4 @@
-const tableInfo = [
+const images = [
   {
     src: 'https://picsum.photos/id/237/200/300',
   },
@@ -13,4 +13,4 @@ const tableInfo = [
   },
 ];
 
-export default tableInfo;
+export default images;

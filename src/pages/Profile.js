@@ -2,20 +2,18 @@ import React from 'react';
 import { Row, Col, Jumbotron, Button, Card, CardDeck } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { EffectFlip } from 'swiper';
+import SwiperCore, { EffectFlip, Autoplay } from 'swiper';
 import 'swiper/swiper-bundle.css';
 
 SwiperCore.use([EffectFlip]);
+SwiperCore.use([Autoplay]);
 
 const Profile = () => {
   return (
     <div>
       <Jumbotron>
         <h1>Welcome to my profile!</h1>
-        <p>
-          This is a simple hero unit, a simple jumbotron-style component for
-          calling extra attention to featured content or information.
-        </p>
+        <p>This is test for Patagonian.</p>
         <p>
           <Button variant='primary'>Learn more</Button>
         </p>
@@ -83,6 +81,11 @@ const Profile = () => {
 
         <Col xs='12' md='6'>
           <Swiper
+            loop={true}
+            autoplay={{
+              delay: 1000,
+              disableOnInteraction: false,
+            }}
             effect='flip'
             slidesPerView={1}
             onSlideChange={() => console.log('slide change')}
@@ -91,7 +94,6 @@ const Profile = () => {
             <SwiperSlide>
               <CardDeck>
                 <Card>
-                  <Card.Img variant='top' src='holder.js/100px160' />
                   <Card.Body>
                     <Card.Title>Card title</Card.Title>
                     <Card.Text>
@@ -102,7 +104,6 @@ const Profile = () => {
                   </Card.Body>
                 </Card>
                 <Card>
-                  <Card.Img variant='top' src='holder.js/100px160' />
                   <Card.Body>
                     <Card.Title>Card title</Card.Title>
                     <Card.Text>
@@ -112,7 +113,6 @@ const Profile = () => {
                   </Card.Body>
                 </Card>
                 <Card>
-                  <Card.Img variant='top' src='holder.js/100px160' />
                   <Card.Body>
                     <Card.Title>Card title</Card.Title>
                     <Card.Text>
@@ -125,9 +125,42 @@ const Profile = () => {
                 </Card>
               </CardDeck>
             </SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
+            <SwiperSlide>
+              <Card>
+                <Card.Body>
+                  <Card.Title>Card title</Card.Title>
+                  <Card.Text>
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This card has even longer
+                    content than the first to show that equal height action.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card>
+                <Card.Body>
+                  <Card.Title>Card title</Card.Title>
+                  <Card.Text>
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This card has even longer
+                    content than the first to show that equal height action.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card>
+                <Card.Body>
+                  <Card.Title>Card title</Card.Title>
+                  <Card.Text>
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This card has even longer
+                    content than the first to show that equal height action.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </SwiperSlide>
           </Swiper>
         </Col>
       </Row>
