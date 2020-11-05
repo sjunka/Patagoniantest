@@ -12,7 +12,7 @@ import Table from './pages/Table';
 
 function App() {
   return (
-    <HashRouter>
+    <HashRouter basename='/'>
       <Navbar />
       <main className='py-3'>
         <Container>
